@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="lob">
+      <h1>Tabuleiro basico</h1>
+      <button id="comecarB"><h2>Começar</h2></button>
+      <button id="sairB"><h2>Sair</h2></button>
+    </div>
+    <div class="jogadorAdd" style="display: none;">
+        <h2>Adicione jogador</h2>
+      <div class="jogador">
+        <input id="nomesJogadores" placeholder="Digite seu nome" name="nome" />
+        <input type="button" value="-" id="removerNome" class="excluir" />
+      </div>
+      <div class="add">
+        <input type="button" id="addNome" value="+" />
+        <input type="button" name="salvar" id="salvarNomes" value="Salvar" />
+    </div>
+</div>
+<div class="jogo" style="display: none;">
+  <div class="historico">
+    <div class="topo-lateral">
+      <button id="dadoB">
+        <img class="dadoB" src="6.png" alt="dado">
+      </button>
+    </div>
+    <p id="infoDado"></p>
+    <p id="infoCasa"></p>
+  </div>
+  <div class="area-jogo"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
